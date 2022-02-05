@@ -1,6 +1,8 @@
-# Getting Started with Create React App
+# WIKIMOVIES
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+React App connected to the TMDB API
+
+Check The live project [HERE](https://angry-bell-97dbb4.netlify.app/)
 
 ## Available Scripts
 
