@@ -2,7 +2,7 @@
 
 React App connected to the TMDB API
 
-Check The live project [HERE](https://angry-bell-97dbb4.netlify.app/)
+Check the live project [HERE](https://angry-bell-97dbb4.netlify.app/)
 
 ## Available Scripts
 
