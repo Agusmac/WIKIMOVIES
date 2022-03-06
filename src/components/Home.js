@@ -5,11 +5,9 @@ import SearchBar from "./SearchBar"
 import Grid from "./Grid"
 
 export default function Home() {
-    const [moviesData, setMoviesData] = React.useState("")
+    const [moviesData, setMoviesData] = React.useState([])
     const [page, setPage] = React.useState(2)
-
     const [searchTerm, setSearchTerm] = React.useState("")
-
     const [fetchUrl, setfetchUrl] = React.useState("")
 
     function changer(e) {

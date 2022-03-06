@@ -21,8 +21,9 @@ export default function SingleMovie() {
         setMovieCredits(data)
         setDirectors(data.crew.filter(member=>member.job=="Director"))
     }, [])
-    console.log(directors,movieData)
-  
+
+   
+    
     return (<>
         <SingleHero movieData={movieData} directors={directors}/>
         <DataBar movieData={movieData}/>

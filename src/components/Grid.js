@@ -11,7 +11,7 @@ export default function Grid({ searchTerm, moviesData,loader }) {
                 {moviesData && moviesData.map((movier, key) => 
                     <Link to={`/SingleMovie/${movier.id}`}key={key}>
                     <div className="indMovie" >
-                        <img src={movier.poster_path ? `http://image.tmdb.org/t/p/w1280/${movier.poster_path}` : "https://t3.ftcdn.net/jpg/02/68/55/60/240_F_268556012_c1WBaKFN5rjRxR2eyV33znK4qnYeKZjm.jpg"} />
+                        <img alt={movier.original_title} src={movier.poster_path ? `http://image.tmdb.org/t/p/w1280/${movier.poster_path}` : "https://t3.ftcdn.net/jpg/02/68/55/60/240_F_268556012_c1WBaKFN5rjRxR2eyV33znK4qnYeKZjm.jpg"} />
                         <div className="hider">
                             <h2>{movier.original_title}</h2>
                             <p>{movier.overview.substring(0, 150)}...</p>
