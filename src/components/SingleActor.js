@@ -1,12 +1,13 @@
-import React from "react"
+import React,{useState,useEffect} from "react"
 import { useParams,useHistory } from "react-router-dom";
 
 export default function SingleActor() {
-
+    try { document.getElementById(`navnavnav`).scrollIntoView({ behavior: "smooth", block: "start" })} catch (error) {}
+ 
     let id = useParams().id
-    let [actor, setActor] = React.useState("")
+    let [actor, setActor] = useState("")
 
-    React.useEffect(async () => {
+    useEffect(async () => {
         const res = await fetch(`https://api.themoviedb.org/3/person/${id}?api_key=${process.env.REACT_APP_API_KEY}&language=en-US`)
         const data = await res.json()
         setActor(data)
@@ -26,11 +27,11 @@ export default function SingleActor() {
                 <div>
                     <h1>{actor.name}</h1>
                     <br />
-                    <p>{actor.biography}</p>
+                    {actor.biography?<p>{actor.biography}</p>:<p>We don't have more info about {actor.name}....</p>}
                     <br />
-                    <p>Birthday: {actor.birthday}</p>
+                    {actor.birthday &&<p>Birthday: {actor.birthday}</p>}
                     <br/>
-                    <p>Born in: {actor.place_of_birth}</p>
+                    {actor.place_of_birth &&<p>Born in: {actor.place_of_birth}</p>}
                 </div>
             </div>
         </div>

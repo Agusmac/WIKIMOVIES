@@ -1,6 +1,6 @@
 import React from "react"
 
-export default function SingleHero({movieData,directors}) {
+export default function SingleHero({movieData,directors,loading}) {
 
     let styles2 = {
         backgroundImage: `url(http://image.tmdb.org/t/p/w1280/${movieData.backdrop_path}), 
@@ -8,6 +8,7 @@ linear-gradient(rgba(0, 0, 0, 0) 41%, rgba(0, 0, 0, 0.65) 100%)`,
         display: "grid"
     }
 
+    if (loading) return <div className="loaderloader"></div>
     return (
         <div className="hero-div kirk" style={styles2}>
         <div className='single-hero'>

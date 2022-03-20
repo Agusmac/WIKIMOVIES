@@ -2,7 +2,7 @@
   padding: 0;
   margin: 0;
   font-family: "Abel", sans-seriff;
-  transition: 0.3s;
+  /* transition: 0.3s; */
 }
 body {
   padding: 0;
@@ -61,6 +61,7 @@ a:hover {
   background-clip: border-box, border-box;
   height: 780px;
   position: relative;
+  transition: none;
 }
 .hero-titler{
   position:absolute;
@@ -357,6 +358,25 @@ input:focus{
   background-color: #757575;
   cursor: pointer;
 }
+.loaderloader{
+    border:5px solid rgb(85, 159, 209);
+    border-top: 5px solid rgb(156, 215, 250);
+    border-radius:50%;
+    width:150px;
+    height:150px;
+    animation:spin 0.8s linear infinite;
+    margin:25vh auto;
+    transition: none;
+}
+@keyframes spin{
+  0%{
+      transform: rotate(0deg);
+  }
+  100%{
+      transform:rotate(360deg)
+  }
+}
+
 
 @media (max-width:1399px) {
   .movieGrid{
@@ -432,6 +452,12 @@ input:focus{
     margin-top: 50px;
     padding: 0 0 50px ;
     text-align: center;
+  }
+  .hero-text {
+    text-align: center;
+    width: 90%;
+    left: 5%;
+    right: 5%;
   }
   
 }

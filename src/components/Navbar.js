@@ -3,15 +3,15 @@ import { Link } from 'react-router-dom'
 
 export default function Navbar() {
     return (
-        <nav>
+        <nav >
             <Link to="/">
-                <h1>
+                <h1 id="navnavnav">
                     WIKIMOVIES
                 </h1>
             </Link>
             <ul>
                 <Link to="/"><li>Home</li></Link>
-                <Link to="/about"><li>About</li></Link>
+                {/* <Link to="/about"><li>About</li></Link> */}
             </ul>
         </nav>
     )
