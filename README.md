@@ -9,6 +9,7 @@ Check the live working project [HERE](https://angry-bell-97dbb4.netlify.app/)
 * React.js
 * Vanilla CSS
 * React-router-dom routing, handles errors page too
+* TMBD API
 
 im currently looking for a job so let me know if u r interested (linkedin engagement is a good investment too)
 
