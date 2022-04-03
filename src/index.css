@@ -461,3 +461,21 @@ input:focus{
   }
   
 }
+
+@media (max-width:400px) {
+  .movieGrid a{
+    width: 80%;
+  }
+  .smdata{
+    width: 100%;
+  }
+  .loaderer{
+    width: 95%;
+  }
+  .searchBar{
+    width: 99%;
+  }
+  nav h1{
+    font-size: 7vw;
+  }
+}
