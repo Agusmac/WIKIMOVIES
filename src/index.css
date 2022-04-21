@@ -463,9 +463,9 @@ input:focus{
 }
 
 @media (max-width:400px) {
-  .movieGrid a{
+  /* .movieGrid a{
     width: 80%;
-  }
+  } */
   .smdata{
     width: 100%;
   }
@@ -474,6 +474,9 @@ input:focus{
   }
   .searchBar{
     width: 99%;
+  }
+  .movieGrid{
+    grid-template-columns: 1fr;
   }
   nav h1{
     font-size: 7vw;
